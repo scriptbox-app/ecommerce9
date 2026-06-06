@@ -208,7 +208,9 @@ select:focus {
   z-index: 99999999 !important; }
 
 .remove-padding {
-  padding: 0px; }
+  padding: 0px; 
+  margin-bottom: 35px;
+}
 
 .nav-item.dropdown:hover .dropdown-menu {
   display: block; }

@@ -754,6 +754,7 @@
         </div>
       </div>
     </div>
+    @include('includes.product.slider-product-styles')
     <div class="row">
       <div class="col-lg-12 remove-padding">
         <div class="trending-item-slider">

@@ -225,6 +225,22 @@
                             </div>
                           </div>
 
+                        <div class="row justify-content-center">
+                          <div class="col-lg-3">
+                            <div class="left-area">
+                                <h4 class="heading">{{ __('Buy Now Button Color') }} *</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                <div class="input-group colorpicker-component cp">
+                                  <input type="text" class="input-field color-field" name="buy_now_color" value="{{ $gs->buy_now_color ?? '#ff5500' }}" class="form-control cp" />
+                                  <span class="input-group-addon"><i></i></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
 
                         <div class="row justify-content-center">
                             <div class="col-lg-3">

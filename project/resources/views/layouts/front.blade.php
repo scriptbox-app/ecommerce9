@@ -1025,6 +1025,7 @@ src="https://www.facebook.com/tr?id=2355381278153504&ev=PageView&noscript=1"
   var mainurl = "{{url('/')}}";
   var gs      = {!! json_encode($gs) !!};
   var langg    = {!! json_encode($langg) !!};
+  var isLoggedIn = {{ Auth::guard('web')->check() ? 'true' : 'false' }};
 </script>
 
 	<!-- jquery -->
@@ -1047,6 +1048,7 @@ src="https://www.facebook.com/tr?id=2355381278153504&ev=PageView&noscript=1"
 	<script src="{{asset('assets/front/js/main.js')}}"></script>
 	<!-- custom -->
 	<script src="{{asset('assets/front/js/custom.js')}}"></script>
+	@include('includes.cart-login-script')
 
     {!! $seo->google_analytics !!}
 
